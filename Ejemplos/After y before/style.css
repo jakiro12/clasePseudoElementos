@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size:  large;
+    position: relative;
+}
+p:hover::before{
+    
+    font-size: xx-large;
+    color: red;
+    margin-right: 20px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    border: 2px solid black;
+}
+p::after{
+    content: "para este curso";
+}
+h3{
+    margin: auto;
+}
+h3::after{
+    content: "de texto";
+}
+h3::before{
+    content: "esto es: ";
+
+}
